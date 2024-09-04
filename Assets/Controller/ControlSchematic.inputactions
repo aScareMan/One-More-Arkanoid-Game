@@ -1,0 +1,115 @@
+{
+    "name": "ControlSchematic",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "235c0120-805c-4672-b3f9-4af7ecc8c79b",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "c4f0bbe5-db47-4c3f-bcfb-ed9cc6d0e1a1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2a00589e-660d-4611-a8c6-919e4e1c62c4",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Game",
+            "id": "764deac6-48f0-4a72-b0fb-8cff1f659bbf",
+            "actions": [
+                {
+                    "name": "MovePlatform",
+                    "type": "Value",
+                    "id": "a5a40a1d-d608-4d06-a727-4f232f4c6ae4",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Mouse_Pos",
+                    "type": "Value",
+                    "id": "ee68253a-4d61-4064-ac08-cbfb4af115b0",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "92fd5216-c945-41b7-ab9f-b6b04bc2b766",
+                    "path": "<Joystick>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePlatform",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "LR_keyobard",
+                    "id": "2a790ad9-235b-40f4-928a-ff6e4e461854",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePlatform",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "0f3ca930-845b-4425-9702-f492314ab4a4",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePlatform",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "5c69fb05-c4b5-4e98-aa14-e485f3d84f3c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePlatform",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "d4a2d970-fec2-4346-bb3e-ce2c37341a69",
+                    "path": "<Mouse>/position/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse_Pos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
