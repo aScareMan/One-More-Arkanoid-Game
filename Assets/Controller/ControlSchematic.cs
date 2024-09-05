@@ -68,7 +68,7 @@ public partial class @ControlSchematic: IInputActionCollection2, IDisposable
                     ""name"": ""Mouse_Pos"",
                     ""type"": ""Value"",
                     ""id"": ""ee68253a-4d61-4064-ac08-cbfb4af115b0"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Delta"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
