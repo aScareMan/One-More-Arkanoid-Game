@@ -6,26 +6,125 @@
             "id": "235c0120-805c-4672-b3f9-4af7ecc8c79b",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "c4f0bbe5-db47-4c3f-bcfb-ed9cc6d0e1a1",
-                    "expectedControlType": "Button",
+                    "name": "MenuKeys",
+                    "type": "Value",
+                    "id": "81eb39b9-adc3-4863-bdcc-4fc1e775ee61",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "2a00589e-660d-4611-a8c6-919e4e1c62c4",
-                    "path": "",
+                    "name": "Keyboard",
+                    "id": "42829d2a-c52d-48ea-aca3-4ae9ead06388",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
+                    "action": "MenuKeys",
+                    "isComposite": true,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "65c4c79a-21a4-40e0-99ba-6578ce406d08",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "f1bde3bd-53c5-4d0d-99fa-ca6b857843c2",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "23e77768-4d69-4f7c-9d9c-18696222b180",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "a34a6807-4741-4227-8ea4-1b9b44a784a7",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "GamePad",
+                    "id": "e28a40d2-7e0f-4050-aed2-498693d024a3",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "b40772a5-15b9-4da1-ba95-6dd639daf3a8",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "aa00b180-534e-48ba-b230-bd186ac7150b",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "9c80721a-99da-4964-9c7f-67a9cad9dbee",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "0715301d-614c-4d48-be39-cc5314a20b0d",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },
@@ -46,7 +145,7 @@
                     "name": "Mouse_Pos",
                     "type": "Value",
                     "id": "ee68253a-4d61-4064-ac08-cbfb4af115b0",
-                    "expectedControlType": "Delta",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -56,7 +155,7 @@
                 {
                     "name": "",
                     "id": "92fd5216-c945-41b7-ab9f-b6b04bc2b766",
-                    "path": "<Joystick>/stick/x",
+                    "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
