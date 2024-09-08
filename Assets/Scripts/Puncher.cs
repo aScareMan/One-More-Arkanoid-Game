@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Puncher : MonoBehaviour
@@ -16,9 +14,8 @@ public class Puncher : MonoBehaviour
     {
         rb.AddForce(directions[Random.Range(0, 2)] * conVal.basicBallSpeed);
     }
-
-    private void Start()
+    public void PunchDatBall2()
     {
-        PunchDatBall();
+        rb.AddForce(directions[Random.Range(0, 2)] * conVal.basicBallSpeed * conVal.multiplyBallSpeed);
     }
 }

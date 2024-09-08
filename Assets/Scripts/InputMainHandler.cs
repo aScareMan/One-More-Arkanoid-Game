@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 public class InputMainHandler : MonoBehaviour
 {
@@ -22,9 +20,9 @@ public class InputMainHandler : MonoBehaviour
             inputActions = new ControlSchematic();
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            EnableInputs();
         }
         else { Destroy(gameObject); }
-        EnableInputs();
     }
 
     void EnableInputs()
@@ -44,7 +42,7 @@ public class InputMainHandler : MonoBehaviour
     }
     private void OnDisable()
     {
-        inputActions.Game.MovePlatform.Disable();
-        inputActions.Game.Mouse_Pos.Disable();
+        inputActions?.Game.MovePlatform.Disable();
+        inputActions?.Game.Mouse_Pos.Disable();
     }
 }

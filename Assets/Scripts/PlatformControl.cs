@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformControl : MonoBehaviour
@@ -30,14 +28,10 @@ public class PlatformControl : MonoBehaviour
         else
         {
             _v3Position.x += inputActions.MoveRangeOnX * values.GetPlatformSpeed;
+            if (Mathf.Abs(_v3Position.x) > 9.0f)
+            { _v3Position.x = _v3Position.x > 0 ? 9.0f : -9.0f; }
         }
-        Debug.Log(_v3Position.x);
         transform.position = _v3Position;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * 10);
     }
 
     public void ToggleMouseControl(bool value)
